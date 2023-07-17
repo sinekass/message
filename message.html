@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sineka S</title>
+    <link rel="stylesheet" href="message.css">
+    </head>
+<body>
+    <center>
+        <div class="container">
+            <div><h1><marquee>Text the message!!</marquee></h1></div>
+            <hr>
+    
+    <label><h3><marquee>Enter a Message</marquee></h3></label><br><br>
+    <label>✉️</label>
+    <input type="text" name="message-input" id="message-input" placeholder="drop u r msg">
+    <br>
+    <p>
+        <button id="click" onclick="getMessage()">Submit</button>
+        <button id="click" onclick="getMessage()">reset</button>
+    </p>
+    <p id="message-output" style="text-align: center; text-transform: uppercase;"></p>
+
+</div>
+</center>
+<script>
+    const messageInput=document.getElementById("message-input");
+
+function getMessage(){
+   document.getElementById("message-output").innerHTML=messageInput.value;
+   messageInput.value="";
+}
+
+</script>
+</body>
+</html>
